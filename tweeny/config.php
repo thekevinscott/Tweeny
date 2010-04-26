@@ -1,25 +1,48 @@
 <?php
 	/*****************************************
 	*
+	*  Site info
+	*
+	*****************************************/
+
+	define('ENVIR','DEV');
+
+	if (ENVIR=='DEV') {
+		$sitename = 'localhost/tweeny';
+	} else {
+		$sitename = 'tweeny.com';
+	}
+
+
+
+	/*****************************************
+	*
 	*  Database config
 	*
 	*****************************************/
 	
-	$database = new Object();
-	$database->database = '';
-	$database->username = '';
-	$database->password = '';
-	$database->host 	= '';
 	
-	$tweeny->database = $database;
+	if (ENVIR=='DEV') {
+		$database 	= '';
+		$username 	= '';
+		$password 	= '';
+		$host	 	= 'localhost';
+
+	} else {
+		$database 	= '';
+		$username 	= '';
+		$password 	= '';
+		$host	 	= 'localhost';
+	}
 	
-	
+		
 	/*****************************************
 	*
 	*  Social Media config
 	*
 	*****************************************/
 	
-	$social = new Object();
+	//$social = new Object();
 	
-	
+	//$social->facebook = new Object();
+	//$social->

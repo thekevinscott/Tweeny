@@ -15,15 +15,10 @@ Options -Indexes
 # 480 weeks
 #<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
 <FilesMatch "\.(pdf|js|css|swf)$">
-Header set Cache-Control "max-age=290304000, public"
+	Header set Cache-Control "max-age=290304000, public"
 </FilesMatch>
 
 # Or, compress certain file types by extension:
 <FilesMatch "\.(html|css|js|php|xml)$">
 SetOutputFilter DEFLATE
 </FilesMatch>
-
-
-
-# [ THIS IS FOR MEDIA TEMPLE - FORCE PHP 5 ] #
-#AddHandler php5-script .php
