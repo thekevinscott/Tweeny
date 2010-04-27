@@ -31,8 +31,13 @@
 					strpos($_SERVER['REQUEST_URI'],$temp_sitename)+strlen($temp_sitename)+1) ;
 	if (! $request) { $request = 'index'; }
 	
-	if (file_exists(APP.'/views/'.$request.'.php')) {
-		require APP.'/views/'.$request.'.php';
-	}
+	
+	/
+	
+	
+	bring('tweenyHeader');
+	bring($request);
+	bring('tweenyFooter');
+	
 	
 	//echo $request;
