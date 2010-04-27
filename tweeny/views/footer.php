@@ -3,6 +3,10 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<? if ($facebook) : ?>
+<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script>
+<script type="text/javascript">FB.init("<?= $facebook->appID ?>", "<?=siteroot?>xd_receiver.htm");</script>
+<? endif; ?>
 
 
 <script type="text/javascript">
