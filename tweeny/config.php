@@ -8,7 +8,7 @@
 	define('ENVIR','DEV');
 
 	if (ENVIR=='DEV') {
-		$sitename = 'localhost/tweeny';
+		$sitename = 'localhost/tweeny/html';
 	} else {
 		$sitename = 'tweeny.com';
 	}
