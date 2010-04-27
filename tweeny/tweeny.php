@@ -4,6 +4,7 @@
 	
 	require 'config.php';
 	require 'tweenyDatabase.class.php';
+	require 'tweenyView.php';
 	
 	if (ENVIR=='PROD') {
 		error_reporting(0);
@@ -32,8 +33,12 @@
 	if (! $request) { $request = 'index'; }
 	
 	
-	/
 	
+	/*****************************************
+	*
+	*  Display views
+	*
+	*****************************************/
 	
 	bring('tweenyHeader');
 	bring($request);

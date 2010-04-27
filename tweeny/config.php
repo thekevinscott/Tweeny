@@ -42,6 +42,8 @@
 	*
 	*****************************************/
 	
+	$facebook = array();
+	
 	//$social = new Object();
 	
 	//$social->facebook = new Object();
